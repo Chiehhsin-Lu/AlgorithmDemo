@@ -1,7 +1,12 @@
 #pragma once
-
+#include <stdbool.h>
+#include <string.h>
 #ifndef __cplusplus
 #ifndef void
 #define  NULL (void *)0
 #endif // !void
-#endif
+
+#endif	// __cplusplus
+
+#define E_OK 0u
+#define E_NOT_OK 1u
