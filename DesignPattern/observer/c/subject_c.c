@@ -1,4 +1,4 @@
-#include "subject_c.h"
+ï»¿#include "subject_c.h"
 
 #include <string.h>
 
@@ -46,7 +46,7 @@ unsigned char DSEP_Detach(Observer* obs)
 	return E_OK;
 }
 
-/***** ÄÚ²¿º¯Êý *****/
+/***** å†…éƒ¨å‡½æ•° *****/
 
 static bool FindIdleListIndex(unsigned char *index)
 {
