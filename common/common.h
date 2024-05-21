@@ -1,6 +1,7 @@
 #pragma once
 #include <stdbool.h>
 #include <string.h>
+#include <stdio.h>
 #ifndef __cplusplus
 #ifndef void
 #define  NULL (void *)0

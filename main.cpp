@@ -12,6 +12,7 @@ static void Test_Distance(void);
 static void Test_Observe(void);
 static void Test_Factory(void);
 static void Test_AbsFactory(void);
+static void TEST_Adapter(void);
 
 int main()
 {
@@ -21,6 +22,7 @@ int main()
 	Test_Observe();
 	Test_Factory();
 	Test_AbsFactory();
+	TEST_Adapter();
 
 	system("pause");
 	return 0;
@@ -104,5 +106,18 @@ static void Test_AbsFactory(void)
 
 	std::string  name4 = "product4";
 	facFunc3.function(name4, 4);
+#endif
+}
+
+static void TEST_Adapter(void)
+{
+#if C_SWITCH == 1
+	DESP_AdapterFunction();
+#endif
+#if C_PLUS__SWITCH == 1
+	DESP_Adaptee adaptee;
+	DESP_Adapter adapter(&adaptee);
+	int val = 1;
+	adapter.requst(&val);
 #endif
 }
