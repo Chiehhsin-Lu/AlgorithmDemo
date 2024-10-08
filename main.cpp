@@ -14,15 +14,20 @@ static void Test_Factory(void);
 static void Test_AbsFactory(void);
 static void TEST_Adapter(void);
 
+// secure
+static void TEST_MD5(void);
+
 int main()
 {
 	printf("Hellod Word!\n");
 
-	Test_Distance();
-	Test_Observe();
-	Test_Factory();
-	Test_AbsFactory();
-	TEST_Adapter();
+	//Test_Distance();
+	//Test_Observe();
+	//Test_Factory();
+	//Test_AbsFactory();
+	//TEST_Adapter();
+
+	TEST_MD5();
 
 	system("pause");
 	return 0;
@@ -120,4 +125,12 @@ static void TEST_Adapter(void)
 	int val = 1;
 	adapter.requst(&val);
 #endif
+}
+
+static void TEST_MD5(void)
+{
+	std::string mdtStr = "1234";
+	Md5Processer md5Pro = Md5Processer();
+	std::string md5Hash = md5Pro.getMd5Hash(mdtStr);
+	std::cout << "MD5 hash of \"" << mdtStr << "\": " << md5Hash << std::endl;
 }

@@ -13,3 +13,4 @@ extern "C" {
 #include "../DesignPattern/factory/c_plus/factory.h"
 #include "../DesignPattern/abstract_factory/c_plus/abstract_factory.h"
 #include "../DesignPattern/adapter/c_plus/adapter.h"
+#include "../secure/md5.h"
